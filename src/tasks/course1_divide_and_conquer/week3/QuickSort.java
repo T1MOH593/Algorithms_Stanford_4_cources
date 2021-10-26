@@ -39,8 +39,8 @@ public class QuickSort {
         int temp = nums[begin];
         nums[begin] = nums[i];
         nums[i] = temp;
-        int comparisons1 = sort(nums, begin, i - 1); // НЕПРАВИЛЬНО ПАРАМЕТРЫ ПЕРЕДАЮТСЯ
-        int comparisons2 = sort(nums, i + 1, end);// НЕПРАВИЛЬНО ПАРАМЕТРЫ ПЕРЕДАЮТСЯ
+        int comparisons1 = sort(nums, begin, i - 1);
+        int comparisons2 = sort(nums, i + 1, end);
 
         return comparisons + comparisons1 + comparisons2;
     }
