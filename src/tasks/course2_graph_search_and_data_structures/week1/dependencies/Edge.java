@@ -1,6 +1,4 @@
-package tasks.course2_graph_search.week1.dependencies;
-
-import java.util.List;
+package tasks.course2_graph_search_and_data_structures.week1.dependencies;
 
 public class Edge {
 

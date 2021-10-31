@@ -1,4 +1,4 @@
-package tasks.course2_graph_search.week1.dependencies;
+package tasks.course2_graph_search_and_data_structures.week1.dependencies;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,8 @@
-package tasks.course2_graph_search.week1.programming_assignment;
+package tasks.course2_graph_search_and_data_structures.week1.programming_assignment;
 
-import tasks.course2_graph_search.week1.dependencies.Edge;
-import tasks.course2_graph_search.week1.dependencies.Graph;
-import tasks.course2_graph_search.week1.dependencies.Vertex;
+import tasks.course2_graph_search_and_data_structures.week1.dependencies.Edge;
+import tasks.course2_graph_search_and_data_structures.week1.dependencies.Graph;
+import tasks.course2_graph_search_and_data_structures.week1.dependencies.Vertex;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,16 +1,13 @@
-package tasks.course2_graph_search.week2.programming_assignment;
+package tasks.course2_graph_search_and_data_structures.week2.programming_assignment;
 
-import tasks.course2_graph_search.week2.dependencies.Edge;
-import tasks.course2_graph_search.week2.dependencies.Graph;
-import tasks.course2_graph_search.week2.dependencies.Vertex;
+import tasks.course2_graph_search_and_data_structures.week2.dependencies.Edge;
+import tasks.course2_graph_search_and_data_structures.week2.dependencies.Graph;
+import tasks.course2_graph_search_and_data_structures.week2.dependencies.Vertex;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.lang.Integer.parseInt;
@@ -46,6 +43,7 @@ public class DijkstraShortestPath {
 
     public static void count(Graph graph, int startVertex) {
         Set<Vertex> setX = new HashSet<>();
+        Queue<Vertex> queueX = new PriorityQueue<>();
         Vertex vertex = graph.getVertices().get(startVertex - 1);
         setX.add(vertex);
         while (setX.size() != graph.getVertices().size()) {
