@@ -1,7 +1,7 @@
 package tasks.course2_graph_search_and_data_structures.week3.programming_assignment;
 
-import tasks.course2_graph_search_and_data_structures.week3.programming_assignment.dependencies.MaxHeap;
-import tasks.course2_graph_search_and_data_structures.week3.programming_assignment.dependencies.MinHeap;
+import tasks.course2_graph_search_and_data_structures.week3.dependencies.MaxHeap;
+import tasks.course2_graph_search_and_data_structures.week3.dependencies.MinHeap;
 
 import java.io.IOException;
 import java.nio.file.Files;
