@@ -23,7 +23,7 @@ public class TwoSum {
                     sumArray[i + 10_000] = true;
                 }
             }
-            System.out.println(++counter1);
+            System.out.println(++counter1 + "th operation of 1 million loop");
         }
         int counter = 0;
         for (int i = 0; i < sumArray.length; i++) {
@@ -36,7 +36,7 @@ public class TwoSum {
     }
 
     public static Set<Long> init(String filename) throws IOException {
-        Set<Long> set = new HashSet<>(1_000_000);
+        Set<Long> set = new HashSet<>(1_250_000, .75f);
 
         BufferedReader bufferedReader = Files.newBufferedReader(Paths.get(filename));
         while (bufferedReader.ready()) {
