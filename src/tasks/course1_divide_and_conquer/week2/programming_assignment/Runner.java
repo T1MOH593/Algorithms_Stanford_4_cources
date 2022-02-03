@@ -10,7 +10,7 @@ import static tasks.course1_divide_and_conquer.week2.programming_assignment.Coun
 public class Runner {
 
     public static void main(String[] args) throws IOException {
-        List<String> list = Files.readAllLines(Paths.get("Integer_Array.txt"));
+        List<String> list = Files.readAllLines(Paths.get("src", "resources", "Integer_Array.txt"));
         int[] nums = new int[100_000];
         int i = 0;
         for (String s : list) {

@@ -19,7 +19,7 @@ public class BigClustering {
     }
 
     private static Map<Integer, Vertex2> init(String filename) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         strings.remove(0);
         Map<Integer, Vertex2> map = new HashMap<>(strings.size());
         int counter = 0;

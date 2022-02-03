@@ -87,7 +87,7 @@ public class DynamicProgrammingAlgo {
     }
 
     public static int[] init(String filename) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         int length = parseInt(strings.get(0));
         strings.remove(0);
         int[] ints = new int[length];

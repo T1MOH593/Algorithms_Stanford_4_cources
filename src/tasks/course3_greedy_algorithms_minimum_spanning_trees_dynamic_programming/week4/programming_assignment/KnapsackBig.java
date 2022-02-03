@@ -19,7 +19,7 @@ public class KnapsackBig {
     }
 
     private static KnapsackInstance[] init(String filename) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         String[] split = strings.get(0).split(" ");
         strings.remove(0);
         matrix = new int[2][parseInt(split[0]) + 1];

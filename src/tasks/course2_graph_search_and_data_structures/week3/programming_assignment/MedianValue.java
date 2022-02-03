@@ -14,7 +14,7 @@ public class MedianValue {
     static MinHeap<Integer> biggestHalf = new MinHeap<>();
 
     public static int getSumOfMedians(String filename) throws IOException {
-        List<String> list = Files.readAllLines(Paths.get(filename));
+        List<String> list = Files.readAllLines(Paths.get("src", "resources", filename));
         int sumOfMedians = 0;
         for (String s : list) {
             sumOfMedians += addValue(Integer.parseInt(s));

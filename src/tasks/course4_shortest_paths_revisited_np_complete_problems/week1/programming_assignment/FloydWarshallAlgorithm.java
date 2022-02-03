@@ -52,7 +52,7 @@ public class FloydWarshallAlgorithm {
 
 
     public static Graph init(String filename) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         Graph graph = new Graph();
         String[] split = strings.get(0).split(" ");
         int amountOfVertices = parseInt(split[0]);

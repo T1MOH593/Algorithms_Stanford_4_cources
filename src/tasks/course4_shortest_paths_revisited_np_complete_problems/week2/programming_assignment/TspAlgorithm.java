@@ -76,7 +76,7 @@ public class TspAlgorithm {
     }
 
     private static float[][] init(String filename) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         Graph graph = new Graph();
         int n = Integer.parseInt(strings.get(0));
         float[][] vertexCosts = new float[n + 1][n + 1];

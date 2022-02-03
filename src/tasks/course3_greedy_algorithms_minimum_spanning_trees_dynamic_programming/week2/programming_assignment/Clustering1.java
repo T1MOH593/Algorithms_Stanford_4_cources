@@ -14,7 +14,7 @@ import java.util.List;
 public class Clustering1 {
 
     public static int maxSpacingKClustering(String filename, int k) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         int numberOfVertices = Integer.parseInt(strings.get(0));
         UnionFind unionFind = new UnionFind(numberOfVertices);
         Edge[] edges = new Edge[strings.size() - 1];

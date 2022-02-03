@@ -21,7 +21,7 @@ public class DijkstraShortestPath {
     }
 
     public static Graph init(String filename) throws IOException {
-        List<String[]> strings = Files.readAllLines(Paths.get(filename)).stream()
+        List<String[]> strings = Files.readAllLines(Paths.get("src", "resources", filename)).stream()
                 .map(string -> string.split("\t"))
                 .collect(Collectors.toList());
 

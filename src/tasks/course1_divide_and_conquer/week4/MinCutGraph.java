@@ -17,7 +17,7 @@ public class MinCutGraph {
     private static int counter = 0;
 
     private static Graph init(String fileName) throws IOException {
-        List<String> fileList1 = Files.readAllLines(Paths.get(fileName));
+        List<String> fileList1 = Files.readAllLines(Paths.get("src", "resources", fileName));
         List<String[]> fileList2 = new ArrayList<>();
         Set<Edge> edgeSet = new HashSet<>();
         List<Vertex> vertexList = new ArrayList<>();

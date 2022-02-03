@@ -77,7 +77,7 @@ public class TwoSatAlgorithm {
     public static List<Vertex> init(String filename) throws IOException {
         leader = 0;
         t = 0;
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         int numberOfVertices = Integer.parseInt(strings.get(0));
         vertexArray = new Vertex[numberOfVertices * 2 + 1];
         List<Vertex> vertices = new ArrayList<>(numberOfVertices);

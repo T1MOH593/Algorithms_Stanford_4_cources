@@ -48,7 +48,7 @@ public class MinimumSpanningTree {
     }
 
     public static Graph init(String filename) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         List<Vertex> vertices = new ArrayList<>();
         for (int i = 1; i <= 500; i++) {
             vertices.add(new Vertex(i));

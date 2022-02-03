@@ -46,7 +46,7 @@ public class TspAdjacentHeuristic {
     }
 
     private static List<Vertex> init(String filename) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         List<Vertex> vertices = new ArrayList<>();
         for (int i = 1; i < strings.size(); i++) {
             String[] split = strings.get(i).split(" ");

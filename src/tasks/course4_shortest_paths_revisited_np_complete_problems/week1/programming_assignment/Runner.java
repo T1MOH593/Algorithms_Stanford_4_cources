@@ -5,8 +5,8 @@ import java.io.IOException;
 public class Runner {
 
     public static void main(String[] args) throws IOException {
-//        int result = FloydWarshallAlgorithm.algorithm("g3.txt");
-//        System.out.println(result);
-//        JonsonsAlgorithm.algorithm("g1.txt");
+        int result = FloydWarshallAlgorithm.algorithm("g3.txt");
+        System.out.println(result);
+        JonsonsAlgorithm.algorithm("g1.txt");
     }
 }

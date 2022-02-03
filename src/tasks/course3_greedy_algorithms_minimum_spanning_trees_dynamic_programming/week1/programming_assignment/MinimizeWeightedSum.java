@@ -11,7 +11,7 @@ import java.util.List;
 public class MinimizeWeightedSum {
 
     public static long count(String filename) throws IOException {
-        List<String> list = Files.readAllLines(Paths.get(filename));
+        List<String> list = Files.readAllLines(Paths.get("src", "resources", filename));
         List<Job> jobs = new ArrayList<>();
         for (int i = 1; i < list.size(); i++) {
             String[] split = list.get(i).split(" ");

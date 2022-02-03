@@ -29,7 +29,7 @@ public class SccCount {
         for (int i = 1; i <= 875714; i++) {
             graph.addVertex(new Vertex(i));
         }
-        BufferedReader bufferedReader = Files.newBufferedReader(Paths.get(filename));
+        BufferedReader bufferedReader = Files.newBufferedReader(Paths.get("src", "resources", filename));
         while (bufferedReader.ready()) {
             String s = bufferedReader.readLine();
             String[] s1 = s.split(" ");

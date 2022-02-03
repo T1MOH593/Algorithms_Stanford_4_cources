@@ -10,7 +10,7 @@ import static tasks.course1_divide_and_conquer.week3.QuickSort.sort;
 public class Runner {
 
     public static void main(String[] args) throws IOException {
-        List<String> list = Files.readAllLines(Paths.get("QuickSort.txt"));
+        List<String> list = Files.readAllLines(Paths.get("src", "resources", "QuickSort.txt"));
         int[] nums = new int[100_000];
         int i = 0;
         for (String s : list) {

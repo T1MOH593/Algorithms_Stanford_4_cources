@@ -13,7 +13,7 @@ import static java.lang.Integer.parseInt;
 public class HuffmanAlgorithm {
 
     public static Result getMaxAndMinLength(String filename) throws IOException {
-        List<String> strings = Files.readAllLines(Paths.get(filename));
+        List<String> strings = Files.readAllLines(Paths.get("src", "resources", filename));
         Node[] nodeArray = new Node[parseInt(strings.get(0))];
         strings.remove(0);
         for (int i = 0; i < strings.size(); i++) {

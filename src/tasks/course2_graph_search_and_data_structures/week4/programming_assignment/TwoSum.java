@@ -38,7 +38,7 @@ public class TwoSum {
     public static Set<Long> init(String filename) throws IOException {
         Set<Long> set = new HashSet<>(1_250_000, .75f);
 
-        BufferedReader bufferedReader = Files.newBufferedReader(Paths.get(filename));
+        BufferedReader bufferedReader = Files.newBufferedReader(Paths.get("src", "resources", filename));
         while (bufferedReader.ready()) {
             long l = parseLong(bufferedReader.readLine());
             set.add(l);
